@@ -1,0 +1,17 @@
+# Typed Tags
+
+Croogo Plugin for adding Tags in a node by typing them into a text area.
+
+Requires [Croogo 1.3.2](http://github.com/croogo/croogo/downloads) or above.
+
+## How to use
+
+Use the TypedTags tab when adding or editing a node to add tags.
+
+Tags must be (only) comma separated.
+
+Taxonomies and terms are used if they exist and created if they don't.
+
+## Todo
+
+Ignore spaces after commas. Currently they are taken as part of the Tag.
