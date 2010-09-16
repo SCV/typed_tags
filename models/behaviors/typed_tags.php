@@ -35,6 +35,7 @@ class TypedTagsBehavior extends ModelBehavior {
             $existent_tags = $this->model->Taxonomy->find('all', array('fields'=>array('Taxonomy.id','Term.slug'),'conditions'=>array('Taxonomy.vocabulary_id' => 2)));
 
             foreach($tags as $tag){
+				$tag=trim($tag);
                 //create slug
                 $slug=preg_replace('/\s/','-', $tag);
                 $slug=preg_replace('/[^a-zA-Z0-9\-]/', '', $slug);
